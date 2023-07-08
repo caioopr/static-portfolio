@@ -1,3 +1,5 @@
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 import './globals.css';
 
 export default function RootLayout({
@@ -6,8 +8,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html>
+      <head />
+      <body>
+        <Header />
+        <div className="mx-auto  max-w-2xl px-6">{children}</div>
+        <Footer />
+      </body>
     </html>
   );
 }
