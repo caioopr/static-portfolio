@@ -32,21 +32,21 @@ export default function Header() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center md:justify-between justify-center sm:items-stretch sm:justify-start">
+              <div className="flex flex-1 items-center sm:justify-between justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="block h-8 w-auto lg:hidden"
+                    className="block h-14 w-auto lg:hidden"
                     src="/logo.svg"
                     alt="name Caio as a logo"
                   />
                   <img
-                    className="hidden h-8 w-auto lg:block"
+                    className="hidden h-14 w-auto lg:block"
                     src="/logo.svg"
                     alt="name Caio as a logo"
                   />
                 </div>
-                <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex  space-x-4">
+                <div className="hidden pt-1.5 sm:ml-6 sm:block">
+                  <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <Link
                         key={item.name}
@@ -63,7 +63,6 @@ export default function Header() {
                       </Link>
                     ))}
                   </div>
-                  <div></div>
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
