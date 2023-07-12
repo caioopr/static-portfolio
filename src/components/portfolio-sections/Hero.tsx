@@ -9,7 +9,7 @@ const socials = [
   },
   {
     name: 'Linkedin',
-    href: 'www.linkedin.com/in/caioopr',
+    href: 'https://linkedin.com/in/caioopr',
     icon: IoLogoLinkedin,
   },
   {
@@ -29,7 +29,7 @@ export default function Hero() {
         </h1>
         <div className="max-w-xl">
           <p className="text-xl sm:text-2xl font-sans text-gray-700">
-            I'm a full-stack/back-end web developer and a Computer Science
+            I'm a back-end & full-stack web developer and a Computer Science
             student based in Brazil.
           </p>
         </div>
@@ -38,7 +38,7 @@ export default function Hero() {
         <div className="flex gap-x-1.5 mt-1.5">
           {socials.map((item) => {
             return (
-              <Link href={item.href} key={item.name}>
+              <Link title={item.href} href={item.href} key={item.name}>
                 <item.icon className="w-6 h-6 transition hover:fill-blue-600" />
               </Link>
             );
