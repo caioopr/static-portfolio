@@ -1,7 +1,15 @@
+import { IconType } from 'react-icons';
 import {BiLogoAndroid, BiLogoCss3, BiLogoDjango, BiLogoDocker, BiLogoHtml5, BiLogoJava, BiLogoJavascript, BiLogoKubernetes, BiLogoMongodb, BiLogoNodejs, BiLogoPython, BiLogoReact, BiLogoSass, BiLogoSpringBoot, BiLogoTailwindCss, BiLogoTypescript, BiLogoVuejs,} from 'react-icons/bi'
 import { SiChakraui, SiFigma, SiGit, SiKotlin, SiMysql, SiNestjs, SiNextdotjs, SiNumpy, SiOpencv, SiPandas, SiPostgresql, SiScipy, SiTensorflow } from 'react-icons/si'
 
-export const skills = [
+export interface SkillInterface{
+  name:string;
+  logo:IconType;
+  packType:string;
+  tag:string;
+}
+
+export const skills:SkillInterface[] = [
   {
     name: 'Java',
     logo: BiLogoJava,
