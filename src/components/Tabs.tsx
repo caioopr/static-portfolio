@@ -44,7 +44,7 @@ export default function MyTabs() {
                     return (
                       <div
                         key={skill.name}
-                        className="dark:bg-darkPrimary group flex origin-center transform items-center gap-4 rounded-sm border border-gray-300 p-4 dark:border-neutral-700 hover:dark:bg-darkSecondary justify-start md:origin-top"
+                        className="dark:bg-darkPrimary group flex origin-center transform items-center gap-4 rounded-sm border border-gray-300 p-4 dark:border-neutral-700 hover:dark:bg-darkSecondary justify-start md:origin-top cursor-text"
                       >
                         <skill.logo className="h-6 w-6" />
                         <p>{skill.name}</p>

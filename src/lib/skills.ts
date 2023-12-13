@@ -1,7 +1,7 @@
 
 import { IconType } from 'react-icons';
 import {BiLogoAndroid, BiLogoCss3, BiLogoDjango, BiLogoDocker, BiLogoHtml5, BiLogoJava, BiLogoJavascript, BiLogoKubernetes, BiLogoMongodb, BiLogoNodejs, BiLogoPython, BiLogoReact, BiLogoSass, BiLogoSpringBoot, BiLogoTailwindCss, BiLogoTypescript, BiLogoVuejs,} from 'react-icons/bi'
-import { SiChakraui, SiFigma, SiGit, SiKotlin, SiMysql, SiNestjs, SiNextdotjs, SiNumpy, SiOpencv, SiPandas, SiPostgresql, SiScipy, SiTensorflow } from 'react-icons/si'
+import { SiChakraui, SiFigma, SiGit, SiKotlin, SiMysql, SiNestjs, SiNextdotjs, SiNumpy, SiOpencv, SiPandas, SiPostgresql, SiRedis, SiScipy, SiTensorflow } from 'react-icons/si'
 
 export interface SkillInterface{
   name:string;
@@ -69,6 +69,12 @@ export const skills:SkillInterface[] = [
     name: 'MongoDB',
     logo: BiLogoMongodb,
     packType: 'bi',
+    tag: 'back-end',
+  },
+  {
+    name: 'Redis',
+    logo: SiRedis,
+    packType: 'si',
     tag: 'back-end',
   },
   {
